@@ -18,10 +18,18 @@
     <ol>
         <li>
         <strong>A space should be placed between the numerical value and the unit symbol.</strong>
-        For example, 1.2 dB is a correct typing, while 1.2dB is not.
+        For example, 1.2 dB is correct, while 1.2dB is not.
         If you are writing in LaTeX, I recommend you use the siunitx by <code>\usepackage{siunitx}</code>. 
         Then the command <code>\SI{&lt;value&gt;}{&lt;unit&gt;}</code> automatically print the space between the numerical value and the unit symbol.
         See Sec. 7.2 in <a href="chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://physics.nist.gov/cuu/pdf/sp811.pdf">NIST Guide for the Use of the International System of Units (SI)</a> for more information.
+        </li>
+        <li>
+            <strong>Physical units must not be italicized.</strong>
+            For example, 1.2 dB is correct, while 1.2 <i>dB</i> is not.
+        </li>
+        <li>
+            <strong>Round up to only one decimal place for decibels.</strong> 
+            For example, 1.2 dB is correct, while 1.23 dB is not.
         </li>
     </ol>
 
