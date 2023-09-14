@@ -1,10 +1,18 @@
 * {
     font-family: Microsoft YaHei, Arial, Helvetica, sans-serif;
+    /* font-family: Roboto, Arial, Helvetica, sans-serif; */
     /* margin: 0; */
     /* padding: 0; */
 }
 
+body {
+    width: 1200px;
+    /* height: 600px; */
+    /* background-color: lightgray; */
+    margin: 0 auto;
+}
 h1 {
+    text-align: center;
 }
 
 h2 {
@@ -33,4 +41,34 @@ p {
 
 .pub_stu {
     text-decoration: underline;
+}
+
+.center {
+    text-align: center;
+}
+
+/* Employement position */
+.employ_pos {
+    font-weight: bold;
+    /* color:  */
+}
+
+/* Employment, institution */
+.employ_inst {
+    font-weight: bold;
+    color: #993404;
+}
+
+/* Employment, period */
+.employ_period {
+    font-weight: bold;
+    color: #cc4c02;
+}
+
+.edu_degree {
+    font-weight: bold;
+}
+.edu_univ {
+    font-weight: bold;
+    color: #993404;
 }
