@@ -50,6 +50,9 @@
 \date{\today}
 
 % \usepackage{mlmodern}
+% reduce space between enumerated items
+\usepackage{enumitem}
+\setlist{nolistsep}
 
 
 \begin{document}
@@ -61,11 +64,19 @@
 本文档总结论文画图的一些建议。
 
 \section{二维图}
-Figure~\ref{fig:39:f020390} shows the results of something.
+图~\ref{fig:2d_fig}~由附件的demo.m文件生成。
+主要注意事项包括：
+\begin{itemize}
+    \item 字体尽可能大。
+    \item 若横纵坐标表示实际物理的长度，则比例应与物理的长度比例相同。如图~\ref{fig:2d_fig}~中长宽比例就当为$8\,\text{m} : 4\, \text{m} = 2:1$。
+    \item 图中所有文字采用LaTeX为Interpreter。
+    \item 输出的图为矢量图。
+    \item 选择更现代化的colormap，图~\ref{fig:2d_fig}~选择的是vik \cite{Crameri2020MisuseColourScience}。
+\end{itemize}
 \begin{figure}[!htb]
     \centering
     \includegraphics[width = 0.6\textwidth]{fig.pdf}
-    \caption{二维图示例}
+    \caption{二维音频声场声压级分布图}
     \label{fig:2d_fig}
 \end{figure}
 
