@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?latexml searchpaths="E:\Work\Project\JiaxinZhongWeb\JiaxinZhong.github.io\tutorial\plot"?>
+<?latexml RelaxNGSchema="LaTeXML"?>
+<document xmlns="http://dlmf.nist.gov/LaTeXML">
+  <resource src="LaTeXML.css" type="text/css"/>
+  <bibliography citestyle="numbers" xml:id="bib">
+    <title/>
+    <biblist>
+      <bibentry key="Crameri2020MisuseColourScience" type="article" xml:id="bib.bib1">
+        <bib-title>The misuse of colour in science communication</bib-title>
+        <bib-name role="author">
+          <surname>Crameri</surname>
+          <givenname>Fabio</givenname>
+        </bib-name>
+        <bib-name role="author">
+          <surname>Shephard</surname>
+          <givenname>Grace E.</givenname>
+        </bib-name>
+        <bib-name role="author">
+          <surname>Heron</surname>
+          <givenname>Philip J.</givenname>
+        </bib-name>
+        <bib-date role="publication">2020</bib-date>
+        <bib-related role="host" type="journal">
+          <bib-title>Nat. Commun.</bib-title>
+        </bib-related>
+        <bib-part role="volume">11</bib-part>
+        <bib-part role="number">1</bib-part>
+        <bib-part role="pages">5444</bib-part>
+        <bib-publisher>Nature Publishing Group</bib-publisher>
+        <bib-identifier id="2041-1723" scheme="issn">ISSN 2041-1723</bib-identifier>
+        <bib-identifier href="https://dx.doi.org/10.1038/s41467-020-19160-7" id="10.1038/s41467-020-19160-7" scheme="doi">Document</bib-identifier>
+        <bib-data role="urldate">2023-02-27</bib-data>
+        <bib-date role="copyright">2020 The Author(s)</bib-date>
+        <bib-data role="langid">english</bib-data>
+        <bib-extract role="keywords">colormap,Scientific community,Software</bib-extract>
+        <bib-data role="self" type="BibTeX">@article{Crameri2020MisuseColourScience,
+     title = {The Misuse of Colour in Science Communication},
+    author = {Crameri, Fabio and Shephard, Grace E. and Heron, Philip J.},
+      year = {2020},
+   journal = {Nat. Commun.},
+    volume = {11},
+    number = {1},
+     pages = {5444},
+ publisher = {{Nature Publishing Group}},
+      issn = {2041-1723},
+       doi = {10.1038/s41467-020-19160-7},
+   urldate = {2023-02-27},
+ copyright = {2020 The Author(s)},
+    langid = {english},
+  keywords = {colormap,Scientific community,Software}}
+</bib-data>
+      </bibentry>
+    </biblist>
+  </bibliography>
+</document>
