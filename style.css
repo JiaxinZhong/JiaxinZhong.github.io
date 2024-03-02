@@ -6,10 +6,11 @@
 }
 
 body {
+    width: 80%;
     /* width: 1200px; */
     /* height: 600px; */
     /* background-color: lightgray; */
-    /* margin: 0 auto; */
+    margin: 0 auto;
 }
 h1 {
     text-align: center;
