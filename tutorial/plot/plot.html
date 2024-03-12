@@ -2,11 +2,12 @@
 <head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <title>画图建议指南</title>
-<!--Generated on Sat Mar  2 14:45:31 2024 by LaTeXML (version 0.8.7) http://dlmf.nist.gov/LaTeXML/.-->
-<!--Document created on  %**** plot.tex Line 50 **** .-->
+<!--Generated on Mon Mar 11 18:40:35 2024 by LaTeXML (version 0.8.8) http://dlmf.nist.gov/LaTeXML/.-->
+<!--Document created on March 11, 2024.-->
 
 <link rel="stylesheet" href="LaTeXML.css" type="text/css">
 <link rel="stylesheet" href="ltx-article.css" type="text/css">
+<link rel="stylesheet" href="ltx-listings.css" type="text/css">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
 <body>
@@ -19,40 +20,42 @@
 <span class="ltx_personname">钟家鑫
 </span></span>
 </div>
-<div class="ltx_dates">(March 2, 2024)</div>
+<div class="ltx_dates">(March 11, 2024)</div>
 
 <section id="S1" class="ltx_section">
 <h2 class="ltx_title ltx_title_section">
 <span class="ltx_tag ltx_tag_section">1 </span>简介</h2>
 
 <div id="S1.p1" class="ltx_para">
-<p class="ltx_p">本文档总结论文画图的一些建议。</p>
+<p class="ltx_p">本文档总结了一些科研中画图的建议。
+本文的图示提供了相应的代码，请<a href="https://github.com/JiaxinZhong/JiaxinZhong.github.io/raw/master/tutorial/plot/plot.zip" title="" class="ltx_ref ltx_href">点击这里</a>下载（在 MATLAB R2023b 中运行通过）。
+画图不要求一定使用 MATLAB 完成，很多其他优秀平台也可以使用，但以下提到的要点和思路是相通的。</p>
 </div>
 </section>
 <section id="S2" class="ltx_section">
 <h2 class="ltx_title ltx_title_section">
-<span class="ltx_tag ltx_tag_section">2 </span>二维图</h2>
+<span class="ltx_tag ltx_tag_section">2 </span>曲线图</h2>
 
 <div id="S2.p1" class="ltx_para">
-<p class="ltx_p">图 <a href="#S2.F1" title="Figure 1 ‣ 2 二维图 ‣ 画图建议指南" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1</span></a> 由附件的demo.m文件生成。
+<p class="ltx_p">曲线图示例见图 <a href="#S2.F1" title="Figure 1 ‣ 2 曲线图 ‣ 画图建议指南" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1</span></a> 所示，由附件的 <span class="ltx_text ltx_lstlisting"><span class="ltx_text ltx_lst_identifier">Demo_Curves</span>.<span class="ltx_text ltx_lst_identifier">m</span></span> 文件生成。
 主要注意事项包括：</p>
 <ul id="S2.I1" class="ltx_itemize">
 <li id="S2.I1.i1" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_item">•</span> 
 <div id="S2.I1.i1.p1" class="ltx_para">
-<p class="ltx_p">字体尽可能大。</p>
+<p class="ltx_p">字体尽可能大，方便读者看清内容。要考虑到论文出版时，图里的字至少不小于正文的字体，还可以适当增大1、2号。</p>
 </div>
 </li>
 <li id="S2.I1.i2" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_item">•</span> 
 <div id="S2.I1.i2.p1" class="ltx_para">
-<p class="ltx_p">若横纵坐标表示实际物理的长度，则比例应与物理的长度比例相同。如图 <a href="#S2.F1" title="Figure 1 ‣ 2 二维图 ‣ 画图建议指南" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1</span></a> 中长宽比例就当为<math id="S2.I1.i2.p1.m1" class="ltx_Math" alttext="8\,\mathrm{m}:4\,\mathrm{m}=2:1" display="inline"><mrow><mrow><mn>8</mn><mo lspace="0.170em">⁢</mo><mi mathvariant="normal">m</mi></mrow><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mrow><mn>4</mn><mo lspace="0.170em">⁢</mo><mi mathvariant="normal">m</mi></mrow><mo>=</mo><mn>2</mn></mrow><mo lspace="0.278em" rspace="0.278em">:</mo><mn>1</mn></mrow></math>。</p>
+<p class="ltx_p">字体全部用 Times New Roman，统一风格。</p>
 </div>
 </li>
 <li id="S2.I1.i3" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_item">•</span> 
 <div id="S2.I1.i3.p1" class="ltx_para">
-<p class="ltx_p">图中所有文字采用字体 Times New Roman，xlabel 和 ylabel 等采用 LaTeX 为 Interpreter。</p>
+<p class="ltx_p">建议 xlabel 和 ylabel 等采用 LaTeX 为 Interpreter。</p>
 </div>
 </li>
 <li id="S2.I1.i4" class="ltx_item" style="list-style-type:none;">
@@ -64,21 +67,76 @@
 <li id="S2.I1.i5" class="ltx_item" style="list-style-type:none;">
 <span class="ltx_tag ltx_tag_item">•</span> 
 <div id="S2.I1.i5.p1" class="ltx_para">
-<p class="ltx_p">选择更现代化的 colormap，图 <a href="#S2.F1" title="Figure 1 ‣ 2 二维图 ‣ 画图建议指南" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1</span></a> 选择的是vik <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib1" title="The misuse of colour in science communication" class="ltx_ref">1</a>]</cite>。</p>
+<p class="ltx_p">选择更现代化的颜色方案，如图 <a href="#S2.F1" title="Figure 1 ‣ 2 曲线图 ‣ 画图建议指南" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1</span></a> 中使用了 Colorbrewer 中的 Set1 <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib2" title="ColorBrewer: color advice for maps" class="ltx_ref">1</a>]</cite>。</p>
+</div>
+</li>
+<li id="S2.I1.i6" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S2.I1.i6.p1" class="ltx_para">
+<p class="ltx_p">曲线尽量粗一点，如图 <a href="#S2.F1" title="Figure 1 ‣ 2 曲线图 ‣ 画图建议指南" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1</span></a> 中的 line width 为 2。</p>
+</div>
+</li>
+<li id="S2.I1.i7" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S2.I1.i7.p1" class="ltx_para">
+<p class="ltx_p">axes 的边框也可以粗一点，如可设为 <span class="ltx_text ltx_lstlisting"><span class="ltx_text ltx_lst_identifier">set</span>(<span class="ltx_text ltx_lst_identifier">gca</span>,<span class="ltx_text ltx_lst_space"> </span>’<span class="ltx_text ltx_lst_identifier">linewidth</span>’,<span class="ltx_text ltx_lst_space"> </span>1.5)</span>。</p>
+</div>
+</li>
+<li id="S2.I1.i8" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S2.I1.i8.p1" class="ltx_para">
+<p class="ltx_p">Legend 内容不要挡住曲线。</p>
 </div>
 </li>
 </ul>
 </div>
-<figure id="S2.F1" class="ltx_figure"><img src="fig.png" id="S2.F1.g1" class="ltx_graphics ltx_centering ltx_img_landscape" width="359" height="187" alt="Refer to caption">
-<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 1: </span>二维音频声场声压级分布图</figcaption>
+<figure id="S2.F1" class="ltx_figure"><object type="image/svg+xml" data="Demo_Curves.svg" id="S2.F1.g1" class="ltx_graphics ltx_centering"></object>
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 1: </span>曲线图示例</figcaption>
+</figure>
+</section>
+<section id="S3" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">3 </span>二维图</h2>
+
+<div id="S3.p1" class="ltx_para">
+<p class="ltx_p">二维图示例如图 <a href="#S3.F2" title="Figure 2 ‣ 3 二维图 ‣ 画图建议指南" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2</span></a> 所示，由附件的 <span class="ltx_text ltx_lstlisting"><span class="ltx_text ltx_lst_identifier">Demo_2D</span>.<span class="ltx_text ltx_lst_identifier">m</span></span> 文件生成。
+除了第 <a href="#S2" title="2 曲线图 ‣ 画图建议指南" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2</span></a> 节中的注意事项外，还包括：</p>
+<ul id="S3.I1" class="ltx_itemize">
+<li id="S3.I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S3.I1.i1.p1" class="ltx_para">
+<p class="ltx_p">若横纵坐标表示实际物理的长度，则比例应与物理的长度比例相同。如图 <a href="#S3.F2" title="Figure 2 ‣ 3 二维图 ‣ 画图建议指南" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2</span></a> 中长宽比例就当为<math id="S3.I1.i1.p1.m1" class="ltx_Math" alttext="8\,\mathrm{m}:4\,\mathrm{m}=2:1" display="inline"><mrow><mrow><mn>8</mn><mo lspace="0.170em">⁢</mo><mi mathvariant="normal">m</mi></mrow><mo lspace="0.278em" rspace="0.278em">:</mo><mrow><mrow><mn>4</mn><mo lspace="0.170em">⁢</mo><mi mathvariant="normal">m</mi></mrow><mo>=</mo><mn>2</mn></mrow><mo lspace="0.278em" rspace="0.278em">:</mo><mn>1</mn></mrow></math>。</p>
+</div>
+</li>
+<li id="S3.I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_item">•</span> 
+<div id="S3.I1.i2.p1" class="ltx_para">
+<p class="ltx_p">选择更现代化的 colormap，图 <a href="#S3.F2" title="Figure 2 ‣ 3 二维图 ‣ 画图建议指南" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2</span></a> 选择的是vik <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib1" title="The misuse of colour in science communication" class="ltx_ref">2</a>]</cite>。</p>
+</div>
+</li>
+</ul>
+</div>
+<figure id="S3.F2" class="ltx_figure"><img src="Demo_2D.png" id="S3.F2.g1" class="ltx_graphics ltx_centering ltx_img_landscape" width="479" height="252" alt="Refer to caption">
+<figcaption class="ltx_caption ltx_centering"><span class="ltx_tag ltx_tag_figure">Figure 2: </span>二维音频声场声压级分布图</figcaption>
 </figure>
 </section>
 <section id="bib" class="ltx_bibliography">
 <h2 class="ltx_title ltx_title_bibliography">References</h2>
 
 <ul id="bib.L1" class="ltx_biblist">
-<li id="bib.bib1" class="ltx_bibitem ltx_bib_article">
+<li id="bib.bib2" class="ltx_bibitem ltx_bib_misc">
 <span class="ltx_tag ltx_bib_key ltx_role_refnum ltx_tag_bibitem">[1]</span>
+<span class="ltx_bibblock"><span class="ltx_text ltx_bib_author">C. Brewer, M. Harrower, B. Sheesley, A. Woodruff, and D. Heyman</span><span class="ltx_text ltx_bib_year"> (2024)</span>
+</span>
+<span class="ltx_bibblock"><span class="ltx_text ltx_bib_title">ColorBrewer: color advice for maps</span>.
+</span>
+<span class="ltx_bibblock">External Links: <span class="ltx_text ltx_bib_links"><a href="https://colorbrewer2.org/#type=qualitative&amp;scheme=Set1&amp;n=9" title="" class="ltx_ref ltx_bib_external">Link</a></span>
+</span>
+<span class="ltx_bibblock ltx_bib_cited">Cited by: <a href="#S2.I1.i5.p1" title="In 2 曲线图 ‣ 画图建议指南" class="ltx_ref"><span class="ltx_text ltx_ref_tag">5th item</span></a>.
+</span>
+</li>
+<li id="bib.bib1" class="ltx_bibitem ltx_bib_article">
+<span class="ltx_tag ltx_bib_key ltx_role_refnum ltx_tag_bibitem">[2]</span>
 <span class="ltx_bibblock"><span class="ltx_text ltx_bib_author">F. Crameri, G. E. Shephard, and P. J. Heron</span><span class="ltx_text ltx_bib_year"> (2020)</span>
 </span>
 <span class="ltx_bibblock"><span class="ltx_text ltx_bib_title">The misuse of colour in science communication</span>.
@@ -88,7 +146,7 @@
 <span class="ltx_bibblock">External Links: <span class="ltx_text ltx_bib_links"><span class="ltx_text issn ltx_bib_external">ISSN 2041-1723</span>,
 <a href="https://dx.doi.org/10.1038/s41467-020-19160-7" title="" class="ltx_ref doi ltx_bib_external">Document</a></span>
 </span>
-<span class="ltx_bibblock ltx_bib_cited">Cited by: <a href="#S2.I1.i5.p1" title="In 2 二维图 ‣ 画图建议指南" class="ltx_ref"><span class="ltx_text ltx_ref_tag">5th item</span></a>.
+<span class="ltx_bibblock ltx_bib_cited">Cited by: <a href="#S3.I1.i2.p1" title="In 3 二维图 ‣ 画图建议指南" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2nd item</span></a>.
 </span>
 </li>
 </ul>
@@ -96,7 +154,7 @@
 </article>
 </div>
 <footer class="ltx_page_footer">
-<div class="ltx_page_logo">Generated  on Sat Mar  2 14:45:31 2024 by <a href="http://dlmf.nist.gov/LaTeXML/" class="ltx_LaTeXML_logo"><span style="letter-spacing:-0.2em; margin-right:0.1em;">L<span class="ltx_font_smallcaps" style="position:relative; bottom:2.2pt;">a</span>T<span class="ltx_font_smallcaps" style="font-size:120%;position:relative; bottom:-0.2ex;">e</span></span><span style="font-size:90%; position:relative; bottom:-0.2ex;">XML</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="Mascot Sammy"></a>
+<div class="ltx_page_logo">Generated  on Mon Mar 11 18:40:35 2024 by <a href="http://dlmf.nist.gov/LaTeXML/" class="ltx_LaTeXML_logo"><span style="letter-spacing:-0.2em; margin-right:0.1em;">L<span class="ltx_font_smallcaps" style="position:relative; bottom:2.2pt;">a</span>T<span class="ltx_font_smallcaps" style="font-size:120%;position:relative; bottom:-0.2ex;">e</span></span><span style="font-size:90%; position:relative; bottom:-0.2ex;">XML</span><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="Mascot Sammy"></a>
 </div></footer>
 </div>
 </body>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?latexml searchpaths="E:\Work\Project\JiaxinZhongWeb\JiaxinZhong.github.io\tutorial\plot"?>
+<?latexml searchpaths="C:\Users\MrJia\Documents\Sync\Work\Project\JiaxinZhongWeb\JiaxinZhong.github.io\tutorial\plot"?>
 <?latexml RelaxNGSchema="LaTeXML"?>
 <document xmlns="http://dlmf.nist.gov/LaTeXML">
   <resource src="LaTeXML.css" type="text/css"/>
@@ -49,6 +49,37 @@
  copyright = {2020 The Author(s)},
     langid = {english},
   keywords = {colormap,Scientific community,Software}}
+</bib-data>
+      </bibentry>
+      <bibentry key="Brewer2024ColorBrewerColorAdvice" type="misc" xml:id="bib.bib2">
+        <bib-title>ColorBrewer: color advice for maps</bib-title>
+        <bib-url href="https://colorbrewer2.org/#type=qualitative&amp;scheme=Set1&amp;n=9">Link</bib-url>
+        <bib-name role="author">
+          <surname>Brewer</surname>
+          <givenname>Cynthia</givenname>
+        </bib-name>
+        <bib-name role="author">
+          <surname>Harrower</surname>
+          <givenname>Mark</givenname>
+        </bib-name>
+        <bib-name role="author">
+          <surname>Sheesley</surname>
+          <givenname>Ben</givenname>
+        </bib-name>
+        <bib-name role="author">
+          <surname>Woodruff</surname>
+          <givenname>Andy</givenname>
+        </bib-name>
+        <bib-name role="author">
+          <surname>Heyman</surname>
+          <givenname>David</givenname>
+        </bib-name>
+        <bib-date role="publication">2024</bib-date>
+        <bib-data role="self" type="BibTeX">@misc{Brewer2024ColorBrewerColorAdvice,
+     title = {ColorBrewer: Color Advice for Maps},
+       url = {https://colorbrewer2.org/#type=qualitative&amp;scheme=Set1&amp;n=9},
+    author = {Brewer, Cynthia and Harrower, Mark and Sheesley, Ben and Woodruff, Andy and Heyman, David},
+      year = {2024}}
 </bib-data>
       </bibentry>
     </biblist>
