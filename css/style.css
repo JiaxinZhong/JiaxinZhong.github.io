@@ -73,3 +73,35 @@ p {
     font-weight: bold;
     color: #993404;
 }
+
+
+.tooltip-link {
+    position: relative;
+    text-decoration: none; /* 去掉默认的下划线。  */
+    display: inline-block;
+    /* color: inherit; */
+    color: #993404;
+    margin-right: 0.4em; /* ← 每个图标右边留一点空隙 */
+  }
+  
+  .tooltip-link::after {
+    content: attr(data-tooltip);        /* 从 data-tooltip 中取出提示文字 */
+    position: absolute;                 /* 绝对定位在链接周围 */
+    bottom: 125%;                       /* 放在链接上方一点 */
+    left: 50%;                          /* 居中对齐 */
+    transform: translateX(-50%);        /* 居中偏移 */
+    background-color: rgba(50, 50, 50, 0.95); /* 深灰背景 */
+    color: #fff;                        /* 白色文字 */
+    padding: 6px 10px;                  /* 内边距，增加可读性 */
+    border-radius: 5px;                 /* 圆角边框 */
+    white-space: nowrap;               /* 防止换行 */
+    font-size: 0.875rem;                /* 字体大小 ≈ 14px */
+    opacity: 0;                         /* 初始透明，不显示 */
+    pointer-events: none;              /* 防止鼠标事件干扰 */
+    transition: opacity 0.2s ease;     /* 鼠标悬停时的淡入动画 */
+    z-index: 10;                        /* 显示在上方 */
+  }
+  
+  .tooltip-link:hover::after {
+    opacity: 0.9;
+  }
