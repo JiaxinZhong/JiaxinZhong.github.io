@@ -1,0 +1,248 @@
+/* 定义一些主要的颜色 */
+:root {
+    --primary-color: #004080;
+    --primary-light: #0066cc;
+  }
+/* Reset and base */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", "Helvetica Neue", sans-serif;
+    background-color: #fafafa;
+    color: #333;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+h1,
+h2 {
+    color: #222;
+    margin-top: 1.5em;
+}
+
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 1em;
+    background-color: white;
+}
+
+/* Navigation bar */
+nav {
+    background-color: #004080;
+    padding: 0.5em 1em;
+}
+
+nav .navbar {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    justify-content: center;
+    gap: 1.5em;
+}
+
+nav .navbar li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.3em 0.5em;
+}
+
+nav .navbar li a:hover,
+nav .navbar li a.active {
+    background-color: #0066cc;
+    border-radius: 5px;
+}
+
+/* Tooltip icons */
+/* .tooltip-link {
+    position: relative;
+    display: inline-block;
+    margin-right: 0.6em;
+    vertical-align: middle;
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .tooltip-link:hover i {
+    transform: scale(1.2);
+    transition: transform 0.2s ease;
+    color: #004080;
+  }
+  
+  .tooltip-link::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+    z-index: 10;
+  } */
+
+.tooltip-link {
+    position: relative;
+    text-decoration: none;
+    /* 去掉默认的下划线。  */
+    display: inline-block;
+    /* color: inherit; */
+    color: var(--primary-light);
+    margin-right: 0.4em;
+    /* ← 每个图标右边留一点空隙 */
+}
+
+.tooltip-link::after {
+    content: attr(data-tooltip);
+    /* 从 data-tooltip 中取出提示文字 */
+    position: absolute;
+    /* 绝对定位在链接周围 */
+    bottom: 125%;
+    /* 放在链接上方一点 */
+    left: 50%;
+    /* 居中对齐 */
+    transform: translateX(-50%);
+    /* 居中偏移 */
+    background-color: rgba(50, 50, 50, 0.95);
+    /* 深灰背景 */
+    color: #fff;
+    /* 白色文字 */
+    padding: 6px 10px;
+    /* 内边距，增加可读性 */
+    border-radius: 5px;
+    /* 圆角边框 */
+    white-space: nowrap;
+    /* 防止换行 */
+    font-size: 0.875rem;
+    /* 字体大小 ≈ 14px */
+    opacity: 0;
+    /* 初始透明，不显示 */
+    pointer-events: none;
+    /* 防止鼠标事件干扰 */
+    transition: opacity 0.2s ease;
+    /* 鼠标悬停时的淡入动画 */
+    z-index: 10;
+    /* 显示在上方 */
+}
+
+.tooltip-link:hover::after {
+    opacity: 0.9;
+}
+
+/* Publication list */
+ol.pub-list {
+    padding-left: 1.2em;
+    list-style-position: outside;
+}
+
+ol.pub-list li {
+    margin-bottom: 1.5em;
+}
+
+.icon-group {
+    margin-top: 0.3em;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    font-size: 0.9em;
+    background: #eee;
+    margin-top: 3em;
+}
+
+/* Self defined classes */
+.journal {
+    font-weight: bold;
+    font-style: italic;
+}
+
+.pub_my_name {
+    font-weight: bold;
+}
+
+.pub_stu {
+    text-decoration: underline;
+}
+
+.center {
+    text-align: center;
+}
+
+/* Responsive layout for smaller screens */
+@media screen and (max-width: 768px) {
+    nav .navbar {
+        flex-direction: column;
+        gap: 0.8em;
+        align-items: center;
+    }
+
+    body,
+    main {
+        padding: 1em;
+        font-size: 15px;
+    }
+
+    .icon-group {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.5em;
+    }
+}
+
+
+/* 自我介绍 */
+.bio-section {
+    padding: 2em 0;
+}
+
+.bio-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    align-items: center;
+}
+
+.bio-image {
+    display: flex;
+    align-items: flex-start;
+}
+
+.bio-image img {
+    width: 220px;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    display: block;
+}
+
+.bio-text {
+    flex: 1;
+    min-width: 280px;
+}
+
+.bio-text h2 {
+    margin-top: 0;
+    color: #004080;
+}
+
+.bio-text p {
+    text-align: justify;
+    margin-bottom: 1em;
+}
+
+.bio-text a {
+    color: #007acc;
+    text-decoration: none;
+}
+
+.bio-text a:hover {
+    text-decoration: underline;
+}
