@@ -196,6 +196,11 @@ footer {
         flex-wrap: wrap;
         gap: 0.5em;
     }
+
+    .bio-image {
+        justify-content: center;
+        width: 100%;
+      }
 }
 
 
@@ -215,7 +220,6 @@ footer {
 .bio-image {
     display: flex;
     align-items: flex-start;
-    justify-content: center;
 }
 
 .bio-image img {
