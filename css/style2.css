@@ -209,6 +209,7 @@ footer {
     flex-wrap: wrap;
     gap: 2em;
     align-items: center;
+    justify-content: center;    /* 水平居中 */
 }
 
 .bio-image {
