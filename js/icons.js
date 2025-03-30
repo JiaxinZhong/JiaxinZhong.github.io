@@ -34,6 +34,10 @@ function addBilibiliIcon(containerId, href, tooltip = "Watch demo videos on Bili
     createIconLink(href, tooltip, "fa-brands fa-bilibili", containerId, label);
 }
 
+function addHighlightIcon(containerId, href, tooltip = "Highlighted by the journal", label = "") {
+    createIconLink(href, tooltip, "fa-solid fa-fire", containerId, label);
+}
+
 
 function addZenodoIcon(containerId, href, tooltip = "Raw data on Zenodo", label = "") {
     createIconLink(href, tooltip, "ai ai-zenodo ai-2x", containerId, label);
