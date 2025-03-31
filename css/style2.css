@@ -32,7 +32,7 @@ h1,
 h2 {
     /* color: #222; */
     color: var(--primary-color);
-    margin-top: 1.5em;
+    /* margin-top: 1.5em; */
 }
 
 main {
@@ -189,7 +189,7 @@ footer {
 
 /* 自我介绍 */
 .bio-section {
-    padding: 2em 0;
+    /* padding: 2em 0; */
 }
 
 .bio-container {

@@ -27,18 +27,18 @@ function createIconLink(href, tooltip, iconClass, containerId, labelText = "") {
 }
 
 // 快捷封装函数：根据内容类型生成不同图标
-function addDoiIcon(containerId, href, tooltip = "DOI link", label = "") {
-    createIconLink(href, tooltip, "ai ai-doi ai-1x", containerId, label);
-}
 function addBilibiliIcon(containerId, href, tooltip = "Watch demo videos on Bilibili", label = "") {
     createIconLink(href, tooltip, "fa-brands fa-bilibili", containerId, label);
 }
-
+function addCodeIcon(containerId, href, tooltip = "Source code for the paper", label = "") {
+    createIconLink(href, tooltip, "fa-solid fa-code", containerId, label);
+}
+function addDoiIcon(containerId, href, tooltip = "DOI link", label = "") {
+    createIconLink(href, tooltip, "ai ai-doi ai-1x", containerId, label);
+}
 function addHighlightIcon(containerId, href, tooltip = "Highlighted by the journal", label = "") {
     createIconLink(href, tooltip, "fa-solid fa-fire", containerId, label);
 }
-
-
 function addZenodoIcon(containerId, href, tooltip = "Raw data on Zenodo", label = "") {
     createIconLink(href, tooltip, "ai ai-zenodo ai-2x", containerId, label);
 }
@@ -54,7 +54,6 @@ function addPdfIcon(containerId, href, tooltip = "Full text", label = "") {
 function addSuppIcon(containerId, href, tooltip = "Supplementary materials", label = "") {
     createIconLink(href, tooltip, "fa-solid fa-paperclip", containerId, label);
 }
-
 function addNewsIcon(containerId, href, tooltip = "News", label = "") {
     createIconLink(href, tooltip, "fa-solid fa-bullhorn", containerId, label);
 }
