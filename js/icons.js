@@ -44,7 +44,11 @@ function addHighlightIcon(containerId, href, tooltip = "Highlighted by the journ
     const container = document.getElementById(containerId);
     if (container && container.lastElementChild) {
         // 设置整个链接的颜色，图标和文字都会继承该颜色
-        container.lastElementChild.style.color = "var(--highlight-red)";
+        // container.lastElementChild.style.color = "var(--highlight-red)";
+        const highlightRed = getComputedStyle(document.documentElement)
+            .getPropertyValue('--highlight-red')
+            .trim();
+        container.lastElementChild.style.color = highlightRed;
     }
 }
 function addZenodoIcon(containerId, href, tooltip = "Raw data on Zenodo", label = "") {
@@ -67,6 +71,10 @@ function addNewsIcon(containerId, href, tooltip = "News", label = "") {
     const container = document.getElementById(containerId);
     if (container && container.lastElementChild) {
         // 设置整个链接的颜色，图标和文字都会继承该颜色
-        container.lastElementChild.style.color = "var(--highlight-red)";
+        // container.lastElementChild.style.color = "var(--highlight-red)";
+        const highlightRed = getComputedStyle(document.documentElement)
+            .getPropertyValue('--highlight-red')
+            .trim();
+        container.lastElementChild.style.color = highlightRed;
     }
 }
