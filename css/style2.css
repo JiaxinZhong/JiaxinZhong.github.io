@@ -78,7 +78,7 @@ nav .navbar li a.active {
     /* 去掉默认的下划线。  */
     display: inline-block;
     /* color: inherit; */
-    color: var(--highlight-red);
+    color: var(--highlight-purple);
     margin-right: 0.4em;
     /* ← 每个图标右边留一点空隙 */
 }

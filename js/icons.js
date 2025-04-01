@@ -36,8 +36,16 @@ function addCodeIcon(containerId, href, tooltip = "Source code for the paper", l
 function addDoiIcon(containerId, href, tooltip = "DOI link", label = "") {
     createIconLink(href, tooltip, "ai ai-doi ai-1x", containerId, label);
 }
+function addErrataIcon(containerId, href, tooltip = "Errata for this work", label = "") {
+    createIconLink(href, tooltip, "fa-solid fa-bug", containerId, label);
+}
 function addHighlightIcon(containerId, href, tooltip = "Highlighted by the journal", label = "") {
     createIconLink(href, tooltip, "fa-solid fa-fire", containerId, label);
+    const container = document.getElementById(containerId);
+    if (container && container.lastElementChild) {
+        // 设置整个链接的颜色，图标和文字都会继承该颜色
+        container.lastElementChild.style.color = "var(--highlight-red)";
+    }
 }
 function addZenodoIcon(containerId, href, tooltip = "Raw data on Zenodo", label = "") {
     createIconLink(href, tooltip, "ai ai-zenodo ai-2x", containerId, label);
@@ -56,4 +64,9 @@ function addSuppIcon(containerId, href, tooltip = "Supplementary materials", lab
 }
 function addNewsIcon(containerId, href, tooltip = "News", label = "") {
     createIconLink(href, tooltip, "fa-solid fa-bullhorn", containerId, label);
+    const container = document.getElementById(containerId);
+    if (container && container.lastElementChild) {
+        // 设置整个链接的颜色，图标和文字都会继承该颜色
+        container.lastElementChild.style.color = "var(--highlight-red)";
+    }
 }
