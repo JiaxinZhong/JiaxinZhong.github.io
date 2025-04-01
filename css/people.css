@@ -1,0 +1,57 @@
+/* === People Section === */
+.people-section {
+    margin-top: 2em;
+  }
+  
+  .people-section h2,
+  .people-section h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5em;
+  }
+  
+  .people-list {
+    list-style: none;
+    padding: 0;
+    margin: 1em 0 2em 0;
+  }
+  
+  .person {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5em;
+  }
+  
+  .person-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-right: 1em;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .person-info {
+    flex: 1;
+    line-height: 1.4;
+  }
+  
+  .person-info a {
+    color: var(--accent-color);
+    text-decoration: none;
+  }
+  
+  .person-info a:hover {
+    text-decoration: underline;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .person {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .person-photo {
+      margin-bottom: 0.5em;
+    }
+  }
+  

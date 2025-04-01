@@ -1,0 +1,14 @@
+/* 全局字体、颜色、排版等基础样式 */
+@import url('base.css');         
+
+/* 页面结构布局，如 header、footer、nav */
+/* @import url('layout.css');        */
+
+/* 指导学生/合作者模块 */
+@import url('people.css');       
+
+/* 研究亮点模块 */
+@import url('research.css');   
+
+/* tooltip 图标样式等 */
+/* @import url('icons.css');         */

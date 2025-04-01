@@ -1,0 +1,197 @@
+/* Progress bar */
+.highlight-slider .progress-bar {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    width: 0%;
+    background-color: rgba(0, 0, 0, 0.05);
+    animation: slide-progress 5s linear infinite;
+}
+
+
+@keyframes slide-progress {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+
+/* === Research Highlights Section === */
+.highlights-section {
+    margin-top: 3em;
+}
+
+.highlights-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.highlight-card {
+    width: 100%;
+    /* max-width: 700px; */
+    height: 800px;
+    margin: auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.highlight-slider {
+    position: relative;
+    width: 100%;
+    height: 60%;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.highlight-slider img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.highlight-slider img.active {
+    opacity: 1;
+    position: relative;
+}
+
+.highlight-slider .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2em;
+    color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 50%;
+    padding: 0.2em 0.4em;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.highlight-slider .arrow:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.highlight-slider .arrow.left {
+    left: 10px;
+}
+
+.highlight-slider .arrow.right {
+    right: 10px;
+}
+
+.highlight-content {
+    flex: 1;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.highlight-title {
+    color: var(--primary-color);
+    margin-top: 0;
+    font-size: 1.2em;
+}
+
+.highlight-text {
+    margin: 0.5em 0 1em 0;
+    font-size: 1em;
+    color: var(--text-color);
+    text-align: justify;
+}
+
+.highlight-links { 
+    color: var(--highlight-purple);
+    font-size: 1em;
+}
+.highlight-links a {
+    color: var(--highlight-purple);
+    /* margin-right: 1em; */
+    /* font-size: 1.2em; */
+    text-decoration: none;
+}
+
+.highlight-links a i {
+    margin-right: 0.3em;
+}
+
+.highlight-links a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* === Publication Highlight Flash === */
+/* 会在页面加载时闪一圈颜色提示用户注意 */
+.flash-highlight {
+    animation: flash-bg 2s ease-in-out;
+}
+
+@keyframes flash-bg {
+    0% {
+        background-color: #fff8e1;
+    }
+
+    50% {
+        background-color: #ffe082;
+    }
+
+    100% {
+        background-color: inherit;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .person {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .person-photo {
+        margin-bottom: 0.5em;
+    }
+
+    .highlight-card {
+        height: auto;
+    }
+
+    .highlight-image {
+        height: auto;
+        max-height: 300px;
+    }
+}
+
+
+.pause-button {
+    position: absolute;
+    bottom: 8px;
+    right: 10px;
+    background: rgba(255, 255, 255, 0.6);
+    border: none;
+    font-size: 1.1em;
+    border-radius: 4px;
+    padding: 0.2em 0.5em;
+    cursor: pointer;
+    z-index: 15;
+    transition: background 0.3s;
+}
+
+.pause-button:hover {
+    background: rgba(255, 255, 255, 0.9);
+}
