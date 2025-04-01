@@ -141,7 +141,18 @@ footer {
     margin-top: 3em;
 }
 
-/* Self defined classes */
+/* pub 有关的样式 */
+.pub_em {
+    font-weight: bold;
+}
+.pub_em::before {
+    content: "(";
+}
+
+.pub_em::after {
+    content: ")";
+}
+
 .journal {
     font-weight: bold;
     font-style: italic;
