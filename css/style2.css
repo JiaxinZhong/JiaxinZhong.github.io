@@ -145,6 +145,7 @@ footer {
 .pub_em {
     font-weight: bold;
 }
+
 .pub_em::before {
     content: "(";
 }
@@ -208,7 +209,6 @@ footer {
     gap: 2em;
     align-items: center;
     justify-content: center;
-    /* 水平居中 */
 }
 
 .bio-image {
@@ -216,6 +216,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 1em;
 }
 
 .bio-image img {
@@ -228,6 +229,7 @@ footer {
 .bio-text {
     flex: 1;
     min-width: 280px;
+    /* margin-top: -1em; */
 }
 
 .bio-text h2 {
