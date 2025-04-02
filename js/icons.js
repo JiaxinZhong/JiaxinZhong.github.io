@@ -51,21 +51,11 @@ function addHighlightIcon(containerId, href, tooltip = "Highlighted by the journ
         container.lastElementChild.style.color = highlightRed;
     }
 }
-function addZenodoIcon(containerId, href, tooltip = "Raw data on Zenodo", label = "") {
-    createIconLink(href, tooltip, "ai ai-zenodo ai-2x", containerId, label);
+
+function addLinkIcon(containerId, href, tooltip = "Link to the website", label = "") {
+    createIconLink(href, tooltip, "fa-solid fa-link", containerId, label);
 }
 
-function addYoutubeIcon(containerId, href, tooltip = "Watch demo videos on YouTube", label = "") {
-    createIconLink(href, tooltip, "fa-brands fa-youtube", containerId, label);
-}
-
-function addPdfIcon(containerId, href, tooltip = "Full text", label = "") {
-    createIconLink(href, tooltip, "fa-solid fa-file-pdf", containerId, label);
-}
-
-function addSuppIcon(containerId, href, tooltip = "Supplementary materials", label = "") {
-    createIconLink(href, tooltip, "fa-solid fa-paperclip", containerId, label);
-}
 function addNewsIcon(containerId, href, tooltip = "News", label = "") {
     createIconLink(href, tooltip, "fa-solid fa-bullhorn", containerId, label);
     const container = document.getElementById(containerId);
@@ -77,4 +67,27 @@ function addNewsIcon(containerId, href, tooltip = "News", label = "") {
             .trim();
         container.lastElementChild.style.color = highlightRed;
     }
+}
+
+
+function addPdfIcon(containerId, href, tooltip = "Full text", label = "") {
+    createIconLink(href, tooltip, "fa-solid fa-file-pdf", containerId, label);
+}
+
+
+function addSlideIcon(containerId, href, tooltip = "Presentation slides", label = "") {
+    createIconLink(href, tooltip, "fa-brands fa-slideshare", containerId, label);
+}
+
+function addSuppIcon(containerId, href, tooltip = "Supplementary materials", label = "") {
+    createIconLink(href, tooltip, "fa-solid fa-paperclip", containerId, label);
+}
+
+function addYoutubeIcon(containerId, href, tooltip = "Watch demo videos on YouTube", label = "") {
+    createIconLink(href, tooltip, "fa-brands fa-youtube", containerId, label);
+}
+
+
+function addZenodoIcon(containerId, href, tooltip = "Raw data on Zenodo", label = "") {
+    createIconLink(href, tooltip, "ai ai-zenodo ai-2x", containerId, label);
 }
