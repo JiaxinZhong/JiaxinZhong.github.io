@@ -281,3 +281,46 @@ footer {
     text-decoration: none;
 }
 
+
+
+.paper-list li.highlight {
+    position: relative;
+}
+
+/* 左边的星标图标 */
+.paper-list li.highlight::before {
+    content: "\f005";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    color: orange;
+    position: absolute;
+    left: -2.8em;
+    top: 0em;
+    font-size: 0.95em;
+    cursor: default;
+    /* 鼠标悬停有感觉 */
+}
+
+/* 悬停提示 “代表作” */
+.paper-list li.highlight::after {
+    content: "Representative work";
+    position: absolute;
+    left: -2.2em;
+    top: -1.8em;
+    transform: translateX(-50%);
+    background-color: rgba(50, 50, 50, 0.95);
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+    font-size: 0.875rem;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+    z-index: 10;
+}
+
+/* 鼠标悬停时显示 tooltip */
+.paper-list li.highlight:hover::after {
+    opacity: 0.9;
+}
