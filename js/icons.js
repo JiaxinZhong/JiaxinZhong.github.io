@@ -73,6 +73,9 @@ function addNewsIcon(containerId, href, tooltip = "News", label = "") {
 function addPdfIcon(containerId, href, tooltip = "Full text", label = "") {
     createIconLink(href, tooltip, "fa-solid fa-file-pdf", containerId, label);
 }
+function addPosterIcon(containerId, href, tooltip = "Poster", label = "") {
+    createIconLink(href, tooltip, "fa-solid fa-chalkboard", containerId, label);
+}
 
 
 function addSlideIcon(containerId, href, tooltip = "Presentation slides", label = "") {

@@ -26,11 +26,32 @@
 
     <main>
         <sectionPaper>
-            <p>Below you can find a list of my academic publications, along with links to DOI and Full Text downloads.
-                Bold author: <span class="pub_my_name">self</span>.
+            <p>Below you can find a list of my academic publications, along with related links and material downloads.
+                <!-- Bold author: <span class="pub_my_name">self</span>.
                 Names with “*”: corresponding author.
                 Names with “&dagger;”: contributed equally.
-                Underline names: students under the supervision of Dr. Jiaxin Zhong.</p>
+                Underline names: students under the supervision of Dr. Jiaxin Zhong. -->
+            <ul>
+                <li>Bold names: <span class="pub_my_name">self</span>.</li>
+                <li>Names with "*": corresponding author.</li>
+                <li>Names with "&dagger;": contributed equally.</li>
+                <li>Underline names: students under the supervision of Dr. Jiaxin Zhong.</li>
+            </ul>
+            </p>
+
+            <h2><i class="ai ai-arxiv"></i> Preprints</h2>
+            <ol reversed>
+                <li>
+                    <span class="pub_my_name">Jia-Xin Zhong</span>,
+                    Jeewoo Kim, Kai Chen, Jing Lu,* Kun Ding,* and Yun Jing,*
+                    "Experimentally probing non-Hermitian spectral transition and eigenstate skewness,"
+                    <span class="journal">arXiv</span> (2025).
+                    <span id="Zhong2025arxiv"></span>
+                    <script>
+                        addLinkIcon("Zhong2025arxiv", "https://arxiv.org/abs/2501.08160");
+                    </script>
+                </li>
+            </ol>
 
             <h2><i class="fa-solid fa-book"></i> Books</h2>
             <ol reversed>
@@ -46,6 +67,7 @@
                         loudspeakers!</span>
                 </li>
             </ol>
+
             <h2><i class="fa-solid fa-file"></i> Journal Articles</h2>
             <ol reversed>
                 <li id="SPL2025DL">
@@ -427,8 +449,18 @@
                 </li>
             </ol>
 
-            <h2><i class="fa-solid fa-users"></i> Conference Papers and Talks</h2>
+            <h2><i class="fa-solid fa-users"></i> Conference Papers, Posters, and Talks</h2>
             <ol reversed>
+                <li>
+                    <span class="pub_my_name">Jia-Xin Zhong</span>,
+                    "Experimentally probing non-Hermitian spectral transition and eigenstate skewness,"
+                    PCTS Workshop: Topological Dynamics, Princeton University, Jan 29-31, 2025.
+                    <span id="Zhong2025Princeton"></span>
+                    <script>
+                        addPosterIcon("Zhong2025Princeton", "./publications/conference/PrincetonPoster_250120A2_compressed.pdf");
+                        addLinkIcon("Case2023NoiseCon", "https://pcts.princeton.edu/events/2025/topological-dynamics");
+                    </script>
+                </li>
                 <li>
                     John Case, Carter Paprocki, Hannah Kurdila, Trent Furlong, Eric Rokni, Yu-Tong Wang,
                     <span class="pub_my_name">Jiaxin Zhong</span>,
