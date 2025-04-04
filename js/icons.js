@@ -39,6 +39,11 @@ function addDoiIcon(containerId, href, tooltip = "DOI link", label = "") {
 function addErrataIcon(containerId, href, tooltip = "Errata for this work", label = "") {
     createIconLink(href, tooltip, "fa-solid fa-bug", containerId, label);
 }
+
+function addGithubIcon(containerId, href, tooltip = "Link to GitHub repository", label = "") {
+    createIconLink(href, tooltip, "fa-brands fa-github", containerId, label);
+}
+
 function addHighlightIcon(containerId, href, tooltip = "Highlighted by the journal", label = "") {
     createIconLink(href, tooltip, "fa-solid fa-fire", containerId, label);
     const container = document.getElementById(containerId);
@@ -69,6 +74,10 @@ function addNewsIcon(containerId, href, tooltip = "News", label = "") {
     }
 }
 
+
+function addOverleafIcon(containerId, href, tooltip = "Link to Overleaf project", label = "") {
+    createIconLink(href, tooltip, "ai ai-overleaf", containerId, label);
+}
 
 function addPdfIcon(containerId, href, tooltip = "Full text", label = "") {
     createIconLink(href, tooltip, "fa-solid fa-file-pdf", containerId, label);
