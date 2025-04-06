@@ -1,0 +1,59 @@
+/* 样式：分享图标和 tooltip + 复制提示 */
+.copy-toast {
+    position: fixed;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #333;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: 9999;
+}
+
+.copy-toast.show {
+    opacity: 1;
+}
+
+.share-tooltip {
+    color: var(--highlight-purple);
+    margin-left: -2px;
+    cursor: pointer;
+    vertical-align: text-bottom;
+    position: relative;
+}
+
+.share-tooltip:hover {
+    color: #000;
+}
+
+.share-tooltip::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    bottom: 150%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(50, 50, 50, 0.95);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease;
+    z-index: 10;
+    font-size: 0.875rem;
+    font-family: "Segoe UI", "Helvetica Neue", sans-serif !important;
+    font-weight: normal !important;
+    text-transform: none !important;
+    font-variant: normal !important;
+    letter-spacing: normal !important;
+    line-height: 1.6;
+}
+
+.share-tooltip:hover::after {
+    opacity: 0.9;
+}

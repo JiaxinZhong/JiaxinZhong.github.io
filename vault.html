@@ -27,16 +27,15 @@
 
     <main>
         <h2><i class="fa-solid fa-file"></i> Document templates</h2>
-        <ul>
-            <li>
-                <strong>Rebuttal Letter</strong>
-                <span id="RebuttalLetter"></span>
-                <script>
-                    addOverleafIcon("RebuttalLetter", "https://www.overleaf.com/project/6436c19195a95c09de72fcba");
-                    addGithubIcon("RebuttalLetter", "https://github.com/JiaxinZhong/RebuttalLetter?tab=readme-ov-file");
-                </script>
-                <br>
+        <ul class="share-enabled">
+            <li id="RebuttalLetter">
+                <strong>Rebuttal Letter</strong>:
                 A LaTeX template for rebuttal letters used to write responses to reviewer and associate editor comments.
+                <span id="IconRebuttalLetter"></span>
+                <script>
+                    addOverleafIcon("IconRebuttalLetter", "https://www.overleaf.com/project/6436c19195a95c09de72fcba");
+                    addGithubIcon("IconRebuttalLetter", "https://github.com/JiaxinZhong/RebuttalLetter?tab=readme-ov-file");
+                </script>
             </li>
         </ul>
 
@@ -48,6 +47,7 @@
 
 
     <script src="js/highlight-activate.js"></script>
+    <script src="js/share.js"></script>
 
 </body>
 

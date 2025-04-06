@@ -87,7 +87,7 @@ nav .navbar li a.active {
     /* 从 data-tooltip 中取出提示文字 */
     position: absolute;
     /* 绝对定位在链接周围 */
-    bottom: 125%;
+    bottom: 100%;
     /* 放在链接上方一点 */
     left: 50%;
     /* 居中对齐 */
@@ -97,7 +97,7 @@ nav .navbar li a.active {
     /* 深灰背景 */
     color: #fff;
     /* 白色文字 */
-    padding: 6px 10px;
+    padding: 5px 10px;
     /* 内边距，增加可读性 */
     border-radius: 5px;
     /* 圆角边框 */
