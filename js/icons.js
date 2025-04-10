@@ -99,7 +99,6 @@ function addYoutubeIcon(containerId, href, tooltip = "Watch demo videos on YouTu
     createIconLink(href, tooltip, "fa-brands fa-youtube", containerId, label);
 }
 
-
 function addZenodoIcon(containerId, href, tooltip = "Raw data on Zenodo", label = "") {
     createIconLink(href, tooltip, "ai ai-zenodo ai-2x", containerId, label);
 }

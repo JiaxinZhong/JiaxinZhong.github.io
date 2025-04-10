@@ -331,15 +331,64 @@ footer {
 /* 将标题中的logo对齐 */
 /* 让 <h2> 带图标的标题使用 flex 布局横向排列 */
 .icon-title {
-    display: flex;                 /* 横向排列图标和文字 */
-    align-items: center;          /* 垂直方向居中对齐 */
-    gap: 0.5em;                   /* 图标与文字之间留一些间距 */
+    display: flex;
+    /* 横向排列图标和文字 */
+    align-items: center;
+    /* 垂直方向居中对齐 */
+    gap: 0.5em;
+    /* 图标与文字之间留一些间距 */
     margin-bottom: 0em;
+    margin-top: 1em;
 }
 
 /* 针对图标进行规范化处理 */
 .icon-title i {
-    width: 0.8em;                 /* 固定图标宽度，实现多个图标之间对齐 */
-    text-align: center;          /* 图标居中显示 */
-    flex-shrink: 0;              /* 防止图标在缩小时被压扁 */
+    width: 0.8em;
+    /* 固定图标宽度，实现多个图标之间对齐 */
+    text-align: center;
+    /* 图标居中显示 */
+    flex-shrink: 0;
+    /* 防止图标在缩小时被压扁 */
+}
+
+
+
+
+
+
+
+.award-list {
+    /* list-style: none; */
+    /* padding: 0; */
+    /* margin: 0; */
+}
+
+.award-item {
+    margin-bottom: 1em;
+}
+
+.award-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    color: var(--highlight-red);
+}
+
+.award-title {
+    flex: 1;
+    margin-right: 1em;
+    color: var(--highlight-red);
+}
+
+.award-date {
+    white-space: nowrap;
+    color: gray;
+    font-weight: normal;
+}
+
+.award-org {
+    margin-top: 0.2em;
+    color: gray;
+    font-size: 0.95em;
 }
